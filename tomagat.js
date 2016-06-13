@@ -79,6 +79,22 @@ var cat = new DigitalPal(false, false, true, 0);
 
 cat.HouseCondition = 100;
 
+cat.destroyFurniture = function () {
+	 if (this.houseQuality - 10 > 0) {
+        this.houseQuality -= 10;
+        this.bored = false;
+        this.sleepy = true;
+        console.log("MUAHAHAHAHA! TAKE THAT FURNITURE!");
+    } else {
+        console.log("I've already destroyed it all!");
+    }
+}
+
+cat.buyNewFurniture = function () {
+	this.HouseCondition +=50;
+	console.log("Are you sure about that?");
+}
+
 
 
 console.log(dog);
