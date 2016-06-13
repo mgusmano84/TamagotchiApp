@@ -29,25 +29,25 @@ DigitalPal.prototype.sleep = function() {
 	}
 }
 
-DigitalPal.prototype.play = function () {
+DigitalPal.prototype.play = function() {
 	if (this.Bored =true) {
 		console.log("Yay! Let's play!");
 		this.Bored = false;
 		this.Hungry = true; 
 	}
-	else console.log("Not right now. Later?");
+	else {console.log("Not right now. Later?");
 	}	
 }
 
-DigitalPal.prototype.increaseAge= function () {
-	this.age++;
-	 console.log("Happy Birthday to me! I am " + this.age +
-        " old!");
+// DigitalPal.prototype.increaseAge = function() {
+// 	this.Age++;
+// 	 console.log("Happy Birthday to me! I am " + this.Age +
+//         " old!");
 
-}
+// }
 
 
-var dog = new DigitalPal(false, false, true, 0, false);
+var dog = new DigitalPal(false, false, true, 0);
 
 dog.outside = false;
 
