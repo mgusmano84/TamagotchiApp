@@ -1,6 +1,5 @@
 
 //constuctor
-
 function DigitalPal (hungry, sleepy, bored, age){
 	this.Hungry= hungry;
 	this.Sleepy= sleepy;
@@ -51,6 +50,7 @@ var dog = new DigitalPal(false, false, true, 0);
 
 dog.outside = false;
 
+//functions within each var
 dog.bark= function (){
 	console.log("Woof! Woof!");
 }
@@ -96,6 +96,6 @@ cat.buyNewFurniture = function () {
 }
 
 
-
+//calls what's in each var
 console.log(dog);
 console.log(cat);
